@@ -1,8 +1,12 @@
-package org.example.hexagonal;
+package org.example.hexagonal.customer;
 
 import an.awesome.pipelinr.Pipeline;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.example.hexagonal.customer.model.request.NewCustomerRequest;
+import org.example.hexagonal.customer.model.response.NewCustomerResponse;
+import org.example.hexagonal.customer.model.Customer;
+import org.example.hexagonal.customer.usecase.NewCustomerUseCase;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

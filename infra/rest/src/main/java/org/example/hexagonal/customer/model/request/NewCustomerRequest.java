@@ -1,4 +1,4 @@
-package org.example.hexagonal;
+package org.example.hexagonal.customer.model.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

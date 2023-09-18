@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HexagonalApplication {
+public class HexagonalRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HexagonalApplication.class, args);
+		SpringApplication.run(HexagonalRestApplication.class, args);
 	}
 
 }

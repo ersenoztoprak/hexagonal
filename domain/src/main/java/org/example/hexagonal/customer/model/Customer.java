@@ -1,4 +1,4 @@
-package org.example.hexagonal;
+package org.example.hexagonal.customer.model;
 
 import lombok.Builder;
 import lombok.Data;

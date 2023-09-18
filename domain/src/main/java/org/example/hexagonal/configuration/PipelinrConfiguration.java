@@ -1,4 +1,4 @@
-package org.example.hexagonal;
+package org.example.hexagonal.configuration;
 
 import an.awesome.pipelinr.Command;
 import an.awesome.pipelinr.Notification;

@@ -1,7 +1,10 @@
-package org.example.hexagonal;
+package org.example.hexagonal.customer;
 
 import an.awesome.pipelinr.Command;
 import lombok.RequiredArgsConstructor;
+import org.example.hexagonal.customer.model.Customer;
+import org.example.hexagonal.customer.port.CustomerPort;
+import org.example.hexagonal.customer.usecase.NewCustomerUseCase;
 import org.springframework.stereotype.Component;
 
 @Component
