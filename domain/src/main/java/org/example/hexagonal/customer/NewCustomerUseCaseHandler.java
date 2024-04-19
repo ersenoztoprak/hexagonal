@@ -2,6 +2,7 @@ package org.example.hexagonal.customer;
 
 import an.awesome.pipelinr.Command;
 import lombok.RequiredArgsConstructor;
+import org.example.hexagonal.customer.model.CreateNewCustomer;
 import org.example.hexagonal.customer.model.Customer;
 import org.example.hexagonal.customer.port.CustomerPort;
 import org.example.hexagonal.customer.usecase.NewCustomerUseCase;
@@ -15,7 +16,8 @@ public class NewCustomerUseCaseHandler implements Command.Handler<NewCustomerUse
 
     @Override
     public Customer handle(final NewCustomerUseCase newCustomerUseCase) {
-
-        return customerPort.addNewCustomer(newCustomerUseCase);
+        return customerPort.addNewCustomer(CreateNewCustomer.builder()
+                .name(newCustomerUseCase.getName())
+                .build());
     }
 }
